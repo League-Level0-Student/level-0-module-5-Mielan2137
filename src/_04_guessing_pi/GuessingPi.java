@@ -3,13 +3,7 @@ package _04_guessing_pi;
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 0
  */
-
-import javax.swing.JOptionPane;
-
-public class GuessingPi {
-	// 1. Make a main method and make sure your program can run
-
-		// 2. Make a String variable to hold the value of Pi.
+// 2. Make a String variable to hold the value of Pi.
 		//    Get the first few digits from http://www.piday.org/million/.
 
 		// 3. Print out the first 3 digits of Pi to the console.
@@ -33,7 +27,31 @@ public class GuessingPi {
 
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
+import javax.swing.JOptionPane;
 
+public class GuessingPi {
+public static void main(String[] args) {
+	
+	String Pi = "3.14159265359";
+	
+	for(int i=0; i<Pi.length();i++) {
+		System.out.println(Pi.charAt(i));
+		
+	String Guess = JOptionPane.showInputDialog("Enter the correct order of tokens that displays the value of PI starting with the first number individually.");
+	if(Guess.equals(Pi.charAt(i)+"")) {
+		
+		JOptionPane.showMessageDialog(null, "HURRAAAYYYYYY.....YOU ARE CORRECT !!!");
+		JOptionPane.showMessageDialog(null, "Now continue to enter each following token inividually to see if you can list out all the charecters.");
+		
+	}
+	else{
+		JOptionPane.showMessageDialog(null, "You have ruined the consequitive sequence of the fabulous number that is represented by Pi. YOU HAVE FAILED. DUM DUM DUUUMMMMMM");	
+		JOptionPane.showMessageDialog(null, "YOU SUCK. YOU SHOULD POOP YOURSELF FOR RUINING SUCH A MAGESTIC NUMBER YOU FOUL SMELL");
+		JOptionPane.showMessageDialog(null, "BTW BEYUNCE IS IRRELIVENT. So irrelivent in fact that I misspelled her name and yo didnt even notice...You just went back to check...You're so predictable...Beyonce sucks");
+break;	
+	}		
+	}
 }
 
-
+	
+}
